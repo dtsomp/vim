@@ -1,10 +1,7 @@
 # My vim configuration
 
-Clone this into ~/.vimrc
+Clone this into ~/.vim
 
-    git clone <repo> ~/.vimrc
+    git clone <repo> ~/.vim
 
 
-Plugins
-
-    https://github.com/euclio/vim-markdown-composer
