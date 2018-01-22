@@ -24,3 +24,5 @@ set modeline
 
 " Custom command definitions go here:
 command Checkpuppet :! puppet parser validate %
+
+nnoremap ,r :.w !bash<CR>
