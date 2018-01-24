@@ -37,19 +37,19 @@ command Checkpuppet :! puppet parser validate %
 command Rspec :! while [ \! -e Rakefile ]; do cd ..; done; rake rspec
 command Addvimconfig :normal mmGo<CR># vim:sw=2:ts=2:expandtab<Esc>`m
 
-call plug#begin('~/.vim/plugged')
-function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
-    if has('nvim')
-      !cargo build --release
-    else
-      !cargo build --release --no-default-features --features json-rpc
-    endif
-  endif
-endfunction
-
-Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
-call plug#end()
-
-
-Plug 'airblade/vim-gitgutter'
+"call plug#begin('~/.vim/plugged')
+"function! BuildComposer(info)
+"  if a:info.status != 'unchanged' || a:info.force
+"    if has('nvim')
+"      !cargo build --release
+"    else
+"      !cargo build --release --no-default-features --features json-rpc
+"    endif
+"  endif
+"endfunction
+"
+"Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+"call plug#end()
+"
+"
+"Plug 'airblade/vim-gitgutter'
