@@ -3,7 +3,7 @@
 Clone this into ~/.vim
 
     git clone <repo> ~/.vim
-
+ 
 
 ## vim-markdown-composer installation
 

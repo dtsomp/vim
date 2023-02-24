@@ -1,6 +1,6 @@
 [submodule "pack/plugins/start/vimwiki"]
 	path = pack/plugins/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
-[submodule "/home/dtsomp/.vim/pack/plugins/start/vim-terraform"]
-	path = /home/dtsomp/.vim/pack/plugins/start/vim-terraform
+[submodule "pack/plugins/start/vim-terraform"]
+	path = pack/plugins/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
