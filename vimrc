@@ -9,9 +9,9 @@ set incsearch
 
 " Tabs and indentation
 "shiftwidth: number of spaces that ">>" will indent
-set shiftwidth=4
+set shiftwidth=2
 "tabstop: tab size (in spaces)
-set tabstop=4
+set tabstop=2
 "expandtab: convert tab to spaces
 set expandtab
 "Auto indentation
@@ -31,11 +31,14 @@ set foldlevel=1
 
 " Custom shortcuts
 nnoremap ,r :.w !bash<CR>
+nmap <Leader>vs <Plug>VimwikiVSplitLink
 
 " Custom command definitions
 command Checkpuppet :! puppet parser validate %
 command Rspec :! while [ \! -e Rakefile ]; do cd ..; done; rake rspec
 command Addvimconfig :normal mmGo<CR># vim:sw=2:ts=2:expandtab<Esc>`m
+command Today :r! date +\%A\ \%D
+command ThisWeek :r! echo "Week $(date +\%V)"
 
 "call plug#begin('~/.vim/plugged')
 "function! BuildComposer(info)
@@ -53,3 +56,16 @@ command Addvimconfig :normal mmGo<CR># vim:sw=2:ts=2:expandtab<Esc>`m
 "
 "
 "Plug 'airblade/vim-gitgutter'
+
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md' },
+                      \ {'path': '~/rovio_wiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
+let g:terraform_fmt_on_save=1
+
+set nocompatible
+filetype plugin on
+syntax on
+                                                                                                               
+
+
+
