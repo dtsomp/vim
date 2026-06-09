@@ -9,10 +9,6 @@ help: ## Show the help menu
 submodules:
 	git submodule update --init --recursive
 
-.PHONY: vimwiki
-vimwiki:  ## Generate vimwiki documentation (:h vimwiki)
-	vim -c 'helptags ~/.vim/pack/plugins/start/vimwiki/doc' -c quit
-
 .PHONY: packages
 packages:
 	sudo apt-get install vim-gitgutter
@@ -23,6 +19,6 @@ git_url_change:		## Change the origin URL from HTTPS to git
 	git remote -v
 
 .PHONY: install
-install: submodules vimwiki ## Installation after a fresh `git clone`
+install: submodules ## Installation after a fresh `git clone`
 
 # vim: tabstop=2 shiftwidth=2 noexpandtab

@@ -58,7 +58,7 @@ command ThisWeek :r! echo "Week $(date +\%V)"
 "Plug 'airblade/vim-gitgutter'
 
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md' },
-                      \ {'path': '~/rovio_wiki/', 'syntax': 'markdown', 'ext': '.md'}]
+                      \ {'path': '~/roviowiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 let g:terraform_fmt_on_save=1
 

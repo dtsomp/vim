@@ -4,6 +4,14 @@ Clone this into ~/.vim
 
     git clone <repo> ~/.vim
  
+## Add submodule
+
+   git submodule add -f git://github.com/rodjek/vim-puppet.git .vim/bundle/puppet
+
+## Remove submodule
+
+    git submodule deinit -f path/to/submodule  #unregister
+    git rm -f path/to/submodule                # delete from git
 
 ## vim-markdown-composer installation
 
