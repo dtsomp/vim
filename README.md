@@ -6,7 +6,7 @@ Clone this into ~/.vim
  
 ## Add submodule
 
-   git submodule add -f git://github.com/rodjek/vim-puppet.git .vim/bundle/puppet
+    git submodule add -f git://github.com/rodjek/vim-puppet.git .vim/bundle/puppet
 
 ## Remove submodule
 
