@@ -37,7 +37,7 @@ nmap <Leader>vs <Plug>VimwikiVSplitLink
 command Checkpuppet :! puppet parser validate %
 command Rspec :! while [ \! -e Rakefile ]; do cd ..; done; rake rspec
 command Addvimconfig :normal mmGo<CR># vim:sw=2:ts=2:expandtab<Esc>`m
-command Today :r! date +\%A\ \%D
+command Today :r! date +\%A\ \%d\/\%m\/\%Y
 command ThisWeek :r! echo "Week $(date +\%V)"
 
 "call plug#begin('~/.vim/plugged')
